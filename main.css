@@ -1,1 +1,7 @@
-test
+body {
+	padding: 40px;
+}
+
+script {
+	border: 3px 5px 3px
+}
