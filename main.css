@@ -12,7 +12,12 @@ img {
 	height: auto;
 	text-align: center;
 	position: absolute;
-	z-index: -1;
+	z-index: -2;
+	border: 2px solid grey;
+}
+
+form {
+	margin-top: 0px;
 }
 
 #container {
@@ -22,11 +27,32 @@ img {
 }
 
 #container-bot {
-	text-align: right;
 	padding: 30px;
 	color: white;
 }
 
 .cleverscriptform {
+	position: relative;
+	top: -80px;
+	font-size: 20px;
+
+}
+
+.cleverscriptinput {
+	margin-top: 0px;
+	width: 35%;
+	height: 40px;
 	text-align: left;
+	font-size: 16px;
+	border: 2px solid grey;
+}
+
+.cleverscriptreply {
+	margin-left: 50%;
+	text-align: right;
+}
+
+.cleverscriptsubmit {
+	margin-top: 45px;
+	height: 40px;
 }
