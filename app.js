@@ -1,13 +1,6 @@
 var youtubeSearch = 'https://www.googleapis.com/youtube/v3/search';
 
-function getDataFromApi(bot, callback) {
-  var query = {
-    q: searchTerm,
-    r: 'json',
-    key: 'AIzaSyDfR_RyvzZNVQXC3TTAwtUx8a55aWG8rU8',
-    part: 'snippet'
-
-  }
+function getDataFromApi(query, callback) {
   $.getJSON(youtubeSearch, query, callback);
 }
 
@@ -26,12 +19,14 @@ function displayYoutubeSearchData(data) {
   $('.js-search-results').html(resultElement);
 }
 
-function watchSubmit() {
-  $('.js-search-form').submit(function(event) {
-    event.preventDefault();
-    var query = $(this).find('.js-query').val();
-    getDataFromApi(query, displayYoutubeSearchData);
-  });
+function init() {
+  var query = {
+    q: 'jackson hole',
+    r: 'json',
+    key: 'AIzaSyChuFTyDgp6IMVOfnb03oDUBZw1qC7rCGA',
+    part: 'snippet'
+  };
+  getDataFromApi(query, displayYoutubeSearchData);
 }
 
-$(function(){watchSubmit();});
+$(function(){init();});
