@@ -8,7 +8,7 @@ function displayYoutubeSearchData(data) {
   var resultElement = '';
   if (data.items) {
     data.items.forEach(function(item) {
-     resultElement += '<img src="' + item.snippet.thumbnails.default.url + '"/>';
+     resultElement += '<a href="'+item.snippet.thumbnails.default.url+'"><img class="thumbnails" src="' + item.snippet.thumbnails.default.url + '"/></a>';
     });
   }
   //use <a element, open and close in different
