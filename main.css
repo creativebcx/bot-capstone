@@ -16,7 +16,6 @@ a {
 input.cleverscriptsubmit {
 		margin-top: 10px;
 		width: 75px;
-		height: 30px;
 		border: 2px solid white;
 		border-radius: 20px;
 		font-size: 20px;
@@ -69,6 +68,9 @@ input.cleverscriptsubmit {
 	position: relative;
 	text-align: center;
 	padding: 8px;
+	width: 15%;
+	margin: auto;
+	border: 2px solid transparent;
 }
 
 #video {
@@ -99,7 +101,6 @@ img:hover.thumbnails {
 
 #bottom-tool:hover {
 	border: 2px solid white;
-	width: 15%;
 	text-align: center;
 	padding: 8px;
 	border-radius: 20px;
