@@ -1,16 +1,12 @@
 body {
 	margin: 0px;
-	color: grey;
 	font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
 	text-align: center;
 	margin-top: 10px;
-}
-
-form {
-	margin-top: 0px;
+	color: grey;
 }
 
 a {
@@ -32,8 +28,7 @@ input.cleverscriptsubmit {
 	position: absolute;
 	width: 100%;
 	height: auto;
-	text-align: center;
-	z-index: -2;
+	z-index: -1;
 	border: 2px solid grey;
 }
 
@@ -48,7 +43,6 @@ input.cleverscriptsubmit {
 
 .cleverscriptform {
 	position: relative;
-	width: 50%;
 	font-size: 20px;
 }
 
@@ -63,6 +57,7 @@ input.cleverscriptsubmit {
 
 .cleverscriptreply {
 	float: right;
+	padding: 10px;
 	width: 50%;
 	height: 300px;
 	text-align: right;
@@ -73,14 +68,14 @@ input.cleverscriptsubmit {
 #bottom-tool {
 	position: relative;
 	text-align: center;
-	padding-top: 100px;
-	width: 100%;
+	padding: 8px;
 }
 
 #video {
 	margin-top: 200px;
 	width: 100%;
 	display: inline-block;
+	text-align: center;
 	position: relative;
 	background: rgba(255, 255, 255, 0.4)
 	/*background-color: white;*/
@@ -88,6 +83,7 @@ input.cleverscriptsubmit {
 }
 
 .thumbnails {
+	display: inline-block;
 	height: 120px;
 	width: auto;
 	margin-left: 6%;
@@ -101,8 +97,10 @@ img:hover.thumbnails {
 	opacity: 0.3;
 }
 
-a:hover {
+#bottom-tool:hover {
 	border: 2px solid white;
+	width: 15%;
+	text-align: center;
 	padding: 8px;
 	border-radius: 20px;
 }
@@ -153,7 +151,7 @@ a:hover {
 	}
 
 	#video {
-		margin-top: 350px;
+		margin-top: 500px;
 		width: 100%;
 		height: 100%;
 		position: relative;
@@ -174,19 +172,17 @@ a:hover {
 @media (max-width: 600px) {
 	
 	body {
-		width: auto;
-		height: 100%;
+		padding: 0;
 	}
 
+/* page wrap inside the body */
+	
 	h1 {
-		width: 100%;
-		margin-left: 10px;
 		font-size: 24px;
 		text-align: center;
 	}
 
 	input.cleverscriptsubmit {
-		margin-top: 10px;
 		width: 35%;
 		height: 40px;
 		border: 2px solid white;
@@ -195,14 +191,14 @@ a:hover {
 		color: white;
 		background: rgba(255, 255, 255, 0.4);
 	}
-
-	#container {
-		width: 100%;
+	.page-wrapper {
+		width: auto;
 	}
 
 	.background-image {
 		width: auto;
 		height: 100%;
+		background-size: cover;
 	}
 
 	.cleverscriptform {
@@ -237,17 +233,18 @@ a:hover {
 		display: inline-block;
 		position: relative;
 		width: 100%;
-		left: 12px;
 		border: none;
 		margin-top: 400px;
-		height: 150px;
+		height: 230px;
 		overflow: auto;
 	}
 
 	.thumbnails {
-		width: auto;
-		padding: 15px;
-		margin-left: 12%;
+		display: block;
+		width: 70%;
+		height: auto;
+		margin: auto;
+		margin-top: 6%;
 	}
 }
 
