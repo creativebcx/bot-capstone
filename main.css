@@ -6,12 +6,16 @@ body {
 
 h1 {
 	text-align: center;
+	margin-top: 10px;
 }
 
 form {
 	margin-top: 0px;
 }
 
+a {
+	color: white;
+}
 .background-image {
 	position: absolute;
 	width: 100%;
@@ -23,7 +27,6 @@ form {
 
 #container {
 	width: 100%;
-	color: white;
 }
 
 #container-bot {
@@ -42,47 +45,54 @@ form {
 	margin-top: 0px;
 	height: 30px;
 	font-size: 16px;
-	border: 5px solid grey;
+	border: 5px solid white;
 	border-radius: 20px;
 }
 
 .cleverscriptreply {
 	float: right;
 	width: 50%;
+	height: 300px;
 	text-align: right;
 	overflow: auto;
-	padding-right: 25px;
 	box-sizing: border-box;
 }
 
 #bottom-tool {
 	position: relative;
-	top: 700px;
 	text-align: center;
+	padding-top: 100px;
 	width: 100%;
 }
 
 #video {
 	margin-top: 200px;
-	margin-left: 85px;
+	width: 100%;
 	display: inline-block;
 	position: relative;
-	border: 4px solid white;
-	border-radius: 20px;
-
+	background: rgba(255, 255, 255, 0.4)
+	/*background-color: white;*/
+	/*opacity: 0.3;*/
 }
 
 .thumbnails {
 	height: 120px;
 	width: auto;
-	margin: 20px;
+	margin-left: 6%;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	border: 2px solid white;
 	border-radius: 20px;
 }
 
-#bottom-tool a {
-	text-align: center;
-	color: white;
+img:hover.thumbnails {
+	opacity: 0.3;
+}
+
+a:hover {
+	border: 2px solid white;
+	padding: 8px;
+	border-radius: 20px;
 }
 
 /*tablet size*/
@@ -109,7 +119,7 @@ form {
 		margin-top: 0px;
 		height: 30px;
 		font-size: 16px;
-		border: 2px solid grey;
+		border: 5px solid white;
 	}
 
 	.cleverscriptreply {
@@ -121,20 +131,33 @@ form {
 
 	#container-bot {
 		padding: 0px;
-		margin-left: 10px;
+	}
+
+	#bottom-tool {
+		position: relative;
+		text-align: center;
+		padding-top: 0px;
+		width: 100%;
 	}
 
 	#video {
-		display: inline-block;
-		position: relative;
+		margin-top: 400px;
 		width: 100%;
-		border: none;
-		margin-top: 500px;
+		height: 100%;
+		position: relative;
+		background: rgba(255, 255, 255, 0.4)
+
+		/*background-color: white;*/
+		/*opacity: 0.3;*/
 	}
 
 	.thumbnails {
+		height: 120px;
 		width: auto;
-		padding: 15px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border: 2px solid white;
+		border-radius: 20px;
 	}
 }
 
@@ -143,20 +166,30 @@ form {
 	
 	body {
 		width: auto;
-		margin: 0px;
-		padding: 0px;
+		height: 100%;
 	}
 
 	h1 {
-		padding: 0px;
-		margin: 0px;
+		width: 100%;
+		margin-left: 10px;
 		font-size: 24px;
 		text-align: center;
 	}
 
+	input.cleverscriptsubmit {
+		margin-top: 10px;
+		width: 35%;
+		border: 1px solid white;
+		border-radius: 20px;
+	}
+
+	#container {
+		width: 100%;
+	}
+
 	.background-image {
 		width: auto;
-		height: auto;
+		height: 100%;
 	}
 
 	.cleverscriptform {
@@ -168,7 +201,7 @@ form {
 
 	.cleverscriptinput {
 		position: relative;
-		margin-top: 0px;
+		margin-top: 10px;
 		height: 30px;
 		font-size: 16px;
 		border: 2px solid grey;
@@ -176,7 +209,7 @@ form {
 
 	.cleverscriptreply {
 		position: absolute;
-		top: 170px;
+		top: 210px;
 		width: 100%;
 		text-align: center;
 	}
@@ -192,7 +225,7 @@ form {
 		width: 100%;
 		left: 0%;
 		border: none;
-		margin-top: 500px;
+		margin-top: 400px;
 	}
 
 	.thumbnails {
