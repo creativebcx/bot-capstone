@@ -13,11 +13,10 @@ form {
 }
 
 .background-image {
-	position: fixed;
+	position: absolute;
 	width: 100%;
 	height: auto;
 	text-align: center;
-	position: absolute;
 	z-index: -2;
 	border: 2px solid grey;
 }
@@ -34,10 +33,8 @@ form {
 
 .cleverscriptform {
 	position: relative;
-	float: left;
 	width: 50%;
 	font-size: 20px;
-
 }
 
 .cleverscriptinput {
@@ -45,7 +42,8 @@ form {
 	margin-top: 0px;
 	height: 30px;
 	font-size: 16px;
-	border: 2px solid grey;
+	border: 5px solid grey;
+	border-radius: 20px;
 }
 
 .cleverscriptreply {
@@ -53,13 +51,8 @@ form {
 	width: 50%;
 	text-align: right;
 	overflow: auto;
-	height: 600px;
 	padding-right: 25px;
 	box-sizing: border-box;
-}
-
-.cleverscriptsubmit {
-	size: 40px;
 }
 
 #bottom-tool {
@@ -70,16 +63,21 @@ form {
 }
 
 #video {
-	padding: 25px;
+	margin-top: 200px;
+	margin-left: 85px;
 	display: inline-block;
 	position: relative;
-	top: 25%;
-	left: 15%;
 	border: 4px solid white;
+	border-radius: 20px;
+
 }
 
 .thumbnails {
-	padding: 20px;
+	height: 120px;
+	width: auto;
+	margin: 20px;
+	border: 2px solid white;
+	border-radius: 20px;
 }
 
 #bottom-tool a {
@@ -130,7 +128,6 @@ form {
 		display: inline-block;
 		position: relative;
 		width: 100%;
-		left: 0%;
 		border: none;
 		margin-top: 500px;
 	}
