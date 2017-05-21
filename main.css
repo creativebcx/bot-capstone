@@ -79,9 +79,7 @@ input.cleverscriptsubmit {
 	display: inline-block;
 	text-align: center;
 	position: relative;
-	background: rgba(255, 255, 255, 0.4)
-	/*background-color: white;*/
-	/*opacity: 0.3;*/
+	background: rgba(255, 255, 255, 0.4);
 }
 
 .thumbnails {
@@ -222,7 +220,7 @@ img:hover.thumbnails {
 		top: 210px;
 		width: 100%;
 		text-align: center;
-		height: 275px;
+		height: 270px;
 	}
 
 	#container-bot {
@@ -236,13 +234,13 @@ img:hover.thumbnails {
 		width: 100%;
 		border: none;
 		margin-top: 400px;
-		height: 230px;
+		height: 250px;
 		overflow: auto;
 	}
 
 	.thumbnails {
 		display: block;
-		width: 70%;
+		width: 50%;
 		height: auto;
 		margin: auto;
 		margin-top: 6%;
