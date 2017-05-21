@@ -8,7 +8,8 @@ function displayYoutubeSearchData(data) {
   var resultElement = '';
   if (data.items) {
     data.items.forEach(function(item) {
-     resultElement += '<source src="'+item.snippet.thumbnails.default.url+'"type="video/mp4"><img class="thumbnails" src="'+ item.snippet.thumbnails.default.url +'"/>';
+     resultElement += '<a href="'+item.snippet.thumbnails.default.url+'"type="video/mp4">\
+     <img class="thumbnails" src="'+ item.snippet.thumbnails.default.url +'"/></a>';
     });
   }
 

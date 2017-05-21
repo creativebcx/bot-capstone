@@ -217,10 +217,10 @@ img:hover.thumbnails {
 
 	.cleverscriptreply {
 		position: absolute;
-		top: 210px;
+		top: 30%;
 		width: 100%;
 		text-align: center;
-		height: 270px;
+		height: 200px;
 	}
 
 	#container-bot {
@@ -233,15 +233,15 @@ img:hover.thumbnails {
 		position: relative;
 		width: 100%;
 		border: none;
-		margin-top: 400px;
-		height: 250px;
+		margin-top: 75%;
+		height: 175px;
 		overflow: auto;
 	}
 
 	.thumbnails {
 		display: block;
-		width: 50%;
-		height: auto;
+		width: auto;
+		height: 150px;
 		margin: auto;
 		margin-top: 6%;
 	}
