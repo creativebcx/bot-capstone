@@ -177,13 +177,13 @@ img:hover.thumbnails {
 /* page wrap inside the body */
 	
 	h1 {
-		font-size: 24px;
+		font-size: 16px;
 		text-align: center;
 	}
 
 	input.cleverscriptsubmit {
 		width: 35%;
-		height: 40px;
+		height: 30px;
 		border: 2px solid white;
 		border-radius: 20px;
 		font-size: 20px;
@@ -202,7 +202,7 @@ img:hover.thumbnails {
 
 	.cleverscriptform {
 		position: absolute;
-		top: 85px;
+		top: 10%;
 		width: 100%;
 		text-align: center;
 	}
@@ -217,7 +217,7 @@ img:hover.thumbnails {
 
 	.cleverscriptreply {
 		position: absolute;
-		top: 30%;
+		top: 25%;
 		width: 100%;
 		text-align: center;
 		height: 200px;
