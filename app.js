@@ -11,7 +11,6 @@ function displayYoutubeSearchData(data) {
      resultElement += '<a href="http://www.youtube.com/watch?v='+item.id.videoId+'">\
      <img class="thumbnails" src="'+ item.snippet.thumbnails.default.url +'"/></a>';
     });
-    console.log(data.items)
   }
 
   else {
