@@ -8,9 +8,10 @@ function displayYoutubeSearchData(data) {
   var resultElement = '';
   if (data.items) {
     data.items.forEach(function(item) {
-     resultElement += '<a href="'+item.snippet.thumbnails.default.url+'"type="video/mp4">\
+     resultElement += '<a href="http://www.youtube.com/watch?v='+item.id.videoId+'">\
      <img class="thumbnails" src="'+ item.snippet.thumbnails.default.url +'"/></a>';
     });
+    console.log(data.items)
   }
 
   else {
@@ -22,10 +23,10 @@ function displayYoutubeSearchData(data) {
 
 function init() {
   var query = {
-    q: 'yellowstone and teton summer outdoor adventures',
+    q: 'jackson hole',
     r: 'json',
     key: 'AIzaSyChuFTyDgp6IMVOfnb03oDUBZw1qC7rCGA',
-    part: 'snippet'
+    part: 'snippet',
   };
   getDataFromApi(query, displayYoutubeSearchData);
 }
