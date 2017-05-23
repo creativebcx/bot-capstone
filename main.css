@@ -20,15 +20,18 @@ input.cleverscriptsubmit {
 		background: rgba(255, 255, 255, 0.4);
 	}
 
-.background-image {
+/*.background-image {
 	position: absolute;
 	width: 100%;
 	height: auto;
 	z-index: -1;
 	border: 2px solid grey;
-}
+}*/
 
 #container {
+	background-image: url("img/grandtetonwallpaper.jpg");
+	background-size: cover;
+	height: calc(100% - 39px);
 	width: 100%;
 }
 
@@ -94,7 +97,11 @@ img:hover.thumbnails {
 	opacity: 0.3;
 }
 
-a {
+#bottom-tool a, #bottom-tool a:visited {
+	color: white;
+}
+
+.link {
 	color: transparent;
 }
 
@@ -112,10 +119,10 @@ a {
 		font-size: 30px;
 	}
 
-	.background-image {
+	/*.background-image {
 		width: auto;
 		height: auto;
-	}
+	}*/
 
 	.cleverscriptform {
 		position: absolute;
@@ -153,7 +160,6 @@ a {
 	#video {
 		margin-top: 500px;
 		width: 100%;
-		height: 100%;
 		position: relative;
 		background: rgba(255, 255, 255, 0.4);
 	}
@@ -195,11 +201,11 @@ a {
 		width: auto;
 	}
 
-	.background-image {
+	/*.background-image {
 		width: auto;
 		height: 100%;
 		background-size: cover;
-	}
+	}*/
 
 	.cleverscriptform {
 		position: absolute;
