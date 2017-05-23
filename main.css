@@ -9,9 +9,6 @@ h1 {
 	color: grey;
 }
 
-a {
-	color: white;
-}
 
 input.cleverscriptsubmit {
 		margin-top: 10px;
@@ -74,7 +71,7 @@ input.cleverscriptsubmit {
 }
 
 #video {
-	margin-top: 200px;
+	margin-top: 175px;
 	width: 100%;
 	display: inline-block;
 	text-align: center;
@@ -95,6 +92,10 @@ input.cleverscriptsubmit {
 
 img:hover.thumbnails {
 	opacity: 0.3;
+}
+
+a {
+	color: transparent;
 }
 
 #bottom-tool:hover {

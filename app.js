@@ -8,7 +8,7 @@ function displayYoutubeSearchData(data) {
   var resultElement = '';
   if (data.items) {
     data.items.forEach(function(item) {
-     resultElement += '<a href="http://www.youtube.com/watch?v='+item.id.videoId+'">\
+     resultElement += '<a style="link" href="http://www.youtube.com/watch?v='+item.id.videoId+'">\
      <img class="thumbnails" src="'+ item.snippet.thumbnails.default.url +'"/></a>';
     });
   }
