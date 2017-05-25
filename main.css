@@ -20,6 +20,10 @@ input.cleverscriptsubmit {
 		background: rgba(255, 255, 255, 0.4);
 	}
 
+input:hover {
+	background: rgba(255, 255, 255, 0.7);
+}	
+
 /*.background-image {
 	position: absolute;
 	width: 100%;
@@ -33,6 +37,7 @@ input.cleverscriptsubmit {
 	background-size: cover;
 	height: calc(100% - 39px);
 	width: 100%;
+	/*display: none;*/
 }
 
 #container-bot {
@@ -62,6 +67,15 @@ input.cleverscriptsubmit {
 	text-align: right;
 	overflow: auto;
 	box-sizing: border-box;
+	border: none;
+	border-radius: 20px;
+	background: rgba(255, 255, 255, 0.4);
+}
+
+.cleverscriptdivider {
+	border-radius: 20px;
+	background: rgba(255, 255, 255, 0.4);
+	padding-top: 3px;
 }
 
 #bottom-tool {
@@ -79,7 +93,7 @@ input.cleverscriptsubmit {
 	display: inline-block;
 	text-align: center;
 	position: relative;
-	background: rgba(255, 255, 255, 0.4);
+	/*background: rgba(255, 255, 255, 0.4);*/
 }
 
 .thumbnails {
@@ -105,11 +119,8 @@ img:hover.thumbnails {
 	color: transparent;
 }
 
-#bottom-tool:hover {
-	border: 2px solid white;
-	text-align: center;
-	padding: 8px;
-	border-radius: 20px;
+#bottom-tool a:hover {
+	color: blue;
 }
 
 /*tablet size*/
@@ -123,6 +134,9 @@ img:hover.thumbnails {
 		width: auto;
 		height: auto;
 	}*/
+	input:hover {
+		background: rgba(255, 255, 255, 0.7);
+	}
 
 	.cleverscriptform {
 		position: absolute;
@@ -161,7 +175,7 @@ img:hover.thumbnails {
 		margin-top: 500px;
 		width: 100%;
 		position: relative;
-		background: rgba(255, 255, 255, 0.4);
+		/*background: rgba(255, 255, 255, 0.4);*/
 	}
 
 	.thumbnails {
@@ -197,6 +211,11 @@ img:hover.thumbnails {
 		color: white;
 		background: rgba(255, 255, 255, 0.4);
 	}
+
+	input:hover {
+		background: rgba(255, 255, 255, 0.7);
+	}
+
 	.page-wrapper {
 		width: auto;
 	}

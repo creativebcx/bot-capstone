@@ -1,4 +1,6 @@
 var youtubeSearch = 'https://www.googleapis.com/youtube/v3/search';
+elStartButton = [];
+//create start button that will change the css via jQuery
 
 function getDataFromApi(query, callback) {
   $.getJSON(youtubeSearch, query, callback);
