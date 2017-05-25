@@ -37,3 +37,24 @@ $(function(){init();});
 //wrap them again, width that lines to edge, margin: 0px auto,
 
 //tablet size do grid with 2x2 spacing - grid spacing for phone 
+
+//function typed() {
+//  $('start-tagline').typed({
+//    strings: ["good places to go hiking?", "best places to watch the sunset?", "beautiful lakes?"]
+    //typeSpeed: 0,
+    //loop: true,
+    //backDelay: 2000
+  //});
+//}
+
+//typed();
+
+// Start Screen Animations
+$(function(){
+    $(".start-tagline").typed({
+      strings: ["where can I go hiking?", "great places to watch the sunset?", "where can I see wildlife?", "mountain bike rides?"],
+      typeSpeed: 0,
+      loop: true,
+      backDelay: 2000
+    });
+  });

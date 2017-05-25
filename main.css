@@ -1,12 +1,22 @@
+html, body {
+	height: 100%;
+}
+
+
 body {
 	margin: 0px;
 	font-family: 'Montserrat', sans-serif;
+	background-image: url("img/grandtetonwallpaper.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 h1 {
 	text-align: center;
-	margin-top: 10px;
-	color: grey;
+	margin-top: 20%;
+	color: white;
+	margin-bottom: 5%;
 }
 
 
@@ -31,13 +41,27 @@ input:hover {
 	z-index: -1;
 	border: 2px solid grey;
 }*/
+.start {
+	text-align: center;
+	box-sizing: border-box;
+	margin-top: 18%;
+	width:100%;
+	height: 100%;
+	background: white;
+}
+
+.start-tagline {
+	margin-left: 40%;
+	margin-top: 2%;
+	color: white;
+	text-align: center;
+}
 
 #container {
-	background-image: url("img/grandtetonwallpaper.jpg");
-	background-size: cover;
-	height: calc(100% - 39px);
+	
+	height: 100%;
 	width: 100%;
-	/*display: none;*/
+	display: none;
 }
 
 #container-bot {
@@ -46,9 +70,11 @@ input:hover {
 }
 
 .cleverscriptform {
-	position: relative;
-	font-size: 20px;
-}
+		position: absolute;
+		top: 190px;
+		width: 100%;
+		text-align: center;
+	}
 
 .cleverscriptinput {
 	position: relative;
@@ -60,23 +86,24 @@ input:hover {
 }
 
 .cleverscriptreply {
-	float: right;
+	/*float: right;*/
 	padding: 10px;
-	width: 50%;
+	width: 100%;
 	height: 300px;
-	text-align: right;
+	margin-top: 170px;
+	text-align: center;
 	overflow: auto;
 	box-sizing: border-box;
 	border: none;
 	border-radius: 20px;
-	background: rgba(255, 255, 255, 0.4);
+	background: rgba(255, 255, 255, 0.6);
 }
 
-.cleverscriptdivider {
+/*.cleverscriptdivider {
 	border-radius: 20px;
 	background: rgba(255, 255, 255, 0.4);
 	padding-top: 3px;
-}
+}*/
 
 #bottom-tool {
 	position: relative;
@@ -88,7 +115,7 @@ input:hover {
 }
 
 #video {
-	margin-top: 175px;
+	/*margin-top: 175px;*/
 	width: 100%;
 	display: inline-block;
 	text-align: center;
@@ -123,11 +150,40 @@ img:hover.thumbnails {
 	color: blue;
 }
 
+.typed-cursor {
+	opacity: 1;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+	color: white;
+}
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+
+.typed-fade-out{
+    opacity: 0;
+    animation: 0;
+    transition: opacity .25s;
+}
+
 /*tablet size*/
 @media (max-width: 1024px) {
 	
 	h1 {
-		font-size: 30px;
+		font-size: 26px;
 	}
 
 	/*.background-image {
