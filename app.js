@@ -34,7 +34,7 @@ function init() {
 
 $(function(){init();});
 
-// Start Screen Animations
+// Landing Page Animations
 $(function(){
     $(".start-tagline").typed({
       strings: ["where can I go hiking?", "where can I buy a tent?", "where can I see wildlife?", "mountain bike rides?", "are there local guide services?"],
@@ -44,12 +44,13 @@ $(function(){
     });
   });
 
+// Start Bot Animations
 $('.scroll-down').click(function(event) {
       event.preventDefault();
-      //$('.start').animate({scrollTop:$(document).height()}, 800);
-      //return false;
-      //$('.start').animate({"display", "none"}, 500, function(){});
-      $('.start').css("display", "none");
+      $('body').animate({scrollTop:$(document).height()}, 1000);
+      console.log('hello');
+      $('.start-container').animate({opacity: 0.9}, 1300);
       $('#container-bot').css("display", "initial");
       $('#video').css("display", "initial");
+      $('#bottom-tool').css("display", "initial");
   });
