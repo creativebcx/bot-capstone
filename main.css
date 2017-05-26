@@ -90,7 +90,7 @@ button{
 	}
 
 	input:hover {
-		background: rgba(255, 255, 255, 0.7);
+		background: darkgrey;
 	}
 
 	.cleverscriptinput {
@@ -103,11 +103,11 @@ button{
 
 	.cleverscriptreply {
 		padding: 5%;
-		width: 100%;
+		width: 85%;
 		height: 300px;
 		top: 400px;
 		margin-top: 25%;
-		margin-right: 50%;
+		margin-left: 8%;
 		text-align: center;
 		font-size: 18px;
 		overflow: auto;
@@ -125,37 +125,48 @@ button{
 	display: none;
 }
 
+	.individual-video-wrapper {
+		border: 2px solid grey;
+		height: 150px;
+	}
+
 	.thumbnails {
 		display: inline-block;
 		height: 120px;
 		width: auto;
-		margin-left: 6%;
-		margin-top: 20px;
 		margin-bottom: 20px;
-		border: 2px solid white;
+		border: 2px solid grey;
 		border-radius: 20px;
+		opacity: 0.7;
 	}
 
 	img:hover.thumbnails {
-		opacity: 0.3;
+		opacity: 0.9;
 	}
 
-	link {
-		color: transparent;
+	.link {
+		display: inline-block;
+		height: 160px;
+		width: auto;
+		margin-top: 5%;
+		margin-left: 3%;
+		border: 2px solid grey;
+		border-radius: 20px;
+		opacity: 0.9;
+		font-size: 12px;
+		a text-align: center;
 	}
 
 #bottom-tool {
 	position: relative;
 	text-align: center;
-	padding: 8px;
-	width: 15%;
+	padding-top: 10%;
 	margin: auto;
-	border: 2px solid transparent;
 	display: none;
 }
 
 #bottom-tool a:hover {
-	color: blue;
+	color: darkgrey;
 }
 
 /*typed.js css info*/

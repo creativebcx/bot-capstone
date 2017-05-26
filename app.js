@@ -47,7 +47,7 @@ $(function(){
 // Start Bot Animations
 $('.scroll-down').click(function(event) {
       event.preventDefault();
-      $('body').animate({scrollTop:$(document).height()}, 1000);
+      $('body').animate({scrollTop:$(document).height()}, 1400);
       console.log('hello');
       $('.start-container').animate({opacity: 0.9}, 1300);
       $('#container-bot').css("display", "initial");
