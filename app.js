@@ -46,10 +46,10 @@ $(function(){
 
 $('.scroll-down').click(function(event) {
       event.preventDefault();
-      //var hash = this.hash;
-      $('.start').animate({scrollTop:$(document).height()}, 800);
-      return false;
-        //scrollTop:$(document).height()
-      //}, 1000, function(){}
-      //);
+      //$('.start').animate({scrollTop:$(document).height()}, 800);
+      //return false;
+      //$('.start').animate({"display", "none"}, 500, function(){});
+      $('.start').css("display", "none");
+      $('#container-bot').css("display", "initial");
+      $('#video').css("display", "initial");
   });

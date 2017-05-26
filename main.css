@@ -16,7 +16,7 @@ body {
 
 h1 {
 	text-align: center;
-	margin-top: 20%;
+	margin-top: 17%;
 	color: white;
 	margin-bottom: 5%;
 }
@@ -36,68 +36,108 @@ input:hover {
 	background: rgba(255, 255, 255, 0.7);
 }	
 
+.tagline-container {
+	text-align: center;
+	}
+
+	.start-tagline {
+		margin-top: 2%;
+		color: white;
+		text-align: center;
+		font-size: 20px;
+	}
+
 .start {
 	text-align: center;
 	box-sizing: border-box;
 	margin-top: 18%;
 	width:100%;
-	height: 200%;
+	height: 100%;
 	background: white;
+	z-index: -2;
+	display: inherit;
+	font-size: 20px;
+	padding-top: 5%;	
 }
 
-.start-tagline {
-	margin-left: 38%;
-	margin-top: 2%;
-	color: white;
-	text-align: center;
+button {
+	width: 75px;
+	border: 2px solid black;
+	border-radius: 20px;
+	font-size: 20px;
+	color: black;
+	background: rgba(255, 255, 255, 0.4);
 }
 
 #container {
 	height: 100%;
 	width: 100%;
-	display: none;
+	z-index: -1;
 }
 
 #container-bot {
 	padding: 30px;
 	color: white;
+	display: none;
 }
 
 .cleverscriptform {
-		position: absolute;
-		top: 190px;
-		width: 100%;
-		text-align: center;
+	position: absolute;
+	top: 30%;
+	width: 100%;
+	text-align: center;
 	}
 
-.cleverscriptinput {
-	position: relative;
-	margin-top: 0px;
-	height: 30px;
-	font-size: 16px;
-	border: 5px solid white;
-	border-radius: 20px;
-}
+	.cleverscriptinput {
+		position: relative;
+		margin-top: 20%;
+		height: 30px;
+		font-size: 16px;
+		border: 5px solid white;
+		border-radius: 20px;
+	}	
 
-.cleverscriptreply {
-	/*float: right;*/
-	padding: 10px;
+	.cleverscriptreply {
+		/*float: right;*/
+		padding: 10px;
+		width: 100%;
+		height: 300px;
+		top: 0px;
+		/*margin-top: 170px;*/
+		text-align: center;
+		overflow: auto;
+		box-sizing: border-box;
+		border: none;
+		border-radius: 20px;
+		background: rgba(255, 255, 255, 0.6);
+	}
+
+#video {
 	width: 100%;
-	height: 300px;
-	margin-top: 170px;
+	display: inline-block;
 	text-align: center;
-	overflow: auto;
-	box-sizing: border-box;
-	border: none;
-	border-radius: 20px;
-	background: rgba(255, 255, 255, 0.6);
+	position: relative;
+	display: none;
 }
 
-/*.cleverscriptdivider {
-	border-radius: 20px;
-	background: rgba(255, 255, 255, 0.4);
-	padding-top: 3px;
-}*/
+	.thumbnails {
+		display: inline-block;
+		height: 120px;
+		width: auto;
+		margin-left: 6%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border: 2px solid white;
+		border-radius: 20px;
+	}
+
+	img:hover.thumbnails {
+		opacity: 0.3;
+	}
+
+	link {
+		color: transparent;
+	}
 
 #bottom-tool {
 	position: relative;
@@ -108,42 +148,11 @@ input:hover {
 	border: 2px solid transparent;
 }
 
-#video {
-	/*margin-top: 175px;*/
-	width: 100%;
-	display: inline-block;
-	text-align: center;
-	position: relative;
-	/*background: rgba(255, 255, 255, 0.4);*/
-}
-
-.thumbnails {
-	display: inline-block;
-	height: 120px;
-	width: auto;
-	margin-left: 6%;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	border: 2px solid white;
-	border-radius: 20px;
-}
-
-img:hover.thumbnails {
-	opacity: 0.3;
-}
-
-#bottom-tool a, #bottom-tool a:visited {
-	color: white;
-}
-
-.link {
-	color: transparent;
-}
-
 #bottom-tool a:hover {
 	color: blue;
 }
 
+/*typed.js css info*/
 .typed-cursor {
 	opacity: 1;
 	-webkit-animation: blink 0.7s infinite;
@@ -173,21 +182,6 @@ img:hover.thumbnails {
     transition: opacity .25s;
 }
 
-/*.scroll-down {
-      opacity: 1;
-      top: 4px;
-      position: relative;
-      button {
-        color: rgba(255, 255, 255, 0.7);
-        transition: all 0.3s ease-in-out;
-        &:hover {
-          div {
-            transform: scale(0.9);
-          }
-          color: rgba(255,255,255,1);
-        }?*
-
-
 /*tablet size*/
 @media (max-width: 1024px) {
 	
@@ -195,10 +189,6 @@ img:hover.thumbnails {
 		font-size: 26px;
 	}
 
-	/*.background-image {
-		width: auto;
-		height: auto;
-	}*/
 	input:hover {
 		background: rgba(255, 255, 255, 0.7);
 	}
@@ -240,7 +230,6 @@ img:hover.thumbnails {
 		margin-top: 500px;
 		width: 100%;
 		position: relative;
-		/*background: rgba(255, 255, 255, 0.4);*/
 	}
 
 	.thumbnails {
@@ -259,8 +248,6 @@ img:hover.thumbnails {
 	body {
 		padding: 0;
 	}
-
-/* page wrap inside the body */
 	
 	h1 {
 		font-size: 16px;
@@ -284,12 +271,6 @@ img:hover.thumbnails {
 	.page-wrapper {
 		width: auto;
 	}
-
-	/*.background-image {
-		width: auto;
-		height: 100%;
-		background-size: cover;
-	}*/
 
 	.cleverscriptform {
 		position: absolute;
