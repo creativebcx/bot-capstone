@@ -47,10 +47,13 @@ $(function(){
 // Start Bot Animations
 $('.scroll-down').click(function(event) {
       event.preventDefault();
-      $('body').animate({scrollTop:$(document).height()}, 1400);
+      $('body').animate({scrollTop:$(document).height()}, 'slow');
       console.log('hello');
-      $('.start-container').animate({opacity: 0.9}, 1300);
+      //$('.start-container').animate({opacity: 0.9}, 1300);
       $('#container-bot').css("display", "initial");
       $('#video').css("display", "initial");
       $('#bottom-tool').css("display", "initial");
   });
+
+
+//offset scroll based on pixels
