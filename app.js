@@ -34,27 +34,22 @@ function init() {
 
 $(function(){init();});
 
-//wrap them again, width that lines to edge, margin: 0px auto,
-
-//tablet size do grid with 2x2 spacing - grid spacing for phone 
-
-//function typed() {
-//  $('start-tagline').typed({
-//    strings: ["good places to go hiking?", "best places to watch the sunset?", "beautiful lakes?"]
-    //typeSpeed: 0,
-    //loop: true,
-    //backDelay: 2000
-  //});
-//}
-
-//typed();
-
 // Start Screen Animations
 $(function(){
     $(".start-tagline").typed({
-      strings: ["where can I go hiking?", "great places to watch the sunset?", "where can I see wildlife?", "mountain bike rides?"],
+      strings: ["where can I go hiking?", "where can I buy a tent?", "where can I see wildlife?", "mountain bike rides?", "are there local guide services?"],
       typeSpeed: 0,
       loop: true,
-      backDelay: 2000
+      backDelay: 3000
     });
+  });
+
+$('.scroll-down').click(function(event) {
+      event.preventDefault();
+      //var hash = this.hash;
+      $('.start').animate({scrollTop:$(document).height()}, 800);
+      return false;
+        //scrollTop:$(document).height()
+      //}, 1000, function(){}
+      //);
   });
