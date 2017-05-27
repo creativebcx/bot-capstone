@@ -252,6 +252,7 @@ a {
 		border: 5px solid grey;
 		border-radius: 20px;
 	}
+
 	#video {
 	width: 100%;
 	display: inline-block;
@@ -334,14 +335,14 @@ a {
 	}
 
 	.cleverscriptreply {
-		padding: 5%;
+		padding: 3%;
 		width: 85%;
 		height: 150px;
 		top: 400px;
 		margin-top: 30%;
 		margin-left: 8%;
 		text-align: center;
-		font-size: 18px;
+		font-size: 14px;
 		overflow: auto;
 		box-sizing: border-box;
 		border: 5px solid grey;
