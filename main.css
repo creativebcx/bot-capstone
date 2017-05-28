@@ -221,7 +221,7 @@ a {
 		box-sizing: border-box;
 		width:100%;
 		/*height: 160%;*/
-		height: 1000px;
+		height: 700px;
 		background: white;
 		display: inherit;
 		font-size: 26px;
@@ -328,8 +328,32 @@ a {
 		display: inherit;
 		font-size: 16px;
 		color: grey;	
-		height: 1000px;
+		height: 700px;
 	}
+
+	input.cleverscriptsubmit {
+		margin-top: 15px;
+		width: 200px;
+		border: 2px solid grey;
+		border-radius: 20px;
+		font-size: 20px;
+		color: grey;
+		height: 50px;
+		background: rgba(255, 255, 255, 0.4);
+	}
+
+	input:hover {
+		background: darkgrey;
+	}
+
+	.cleverscriptinput {
+		position: relative;
+		height: 30px;
+		margin-top: 20px;
+		font-size: 16px;
+		border: 2px solid grey;
+		border-radius: 20px;
+	}	
 
 	.cleverscriptreply {
 		padding: 3%;
@@ -346,6 +370,9 @@ a {
 		border-radius: 20px;
 	}
 
+	.bottom-tool {
+		padding-bottom: 5%;
+	}
 }
 
 

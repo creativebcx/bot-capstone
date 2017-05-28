@@ -24,7 +24,7 @@ function displayYoutubeSearchData(data) {
 
 function init() {
   var query = {
-    q: 'jackson hole',
+    q: 'jackson hole mountain biking and climbing',
     r: 'json',
     key: 'AIzaSyChuFTyDgp6IMVOfnb03oDUBZw1qC7rCGA',
     part: 'snippet',
