@@ -53,6 +53,7 @@ $('.scroll-down').click(function(event) {
       $('#container-bot').css("display", "initial");
       $('#video').css("display", "initial");
       $('#bottom-tool').css("display", "initial");
+      $('body').css('background-image', 'none');
   });
 
 
