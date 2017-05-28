@@ -49,11 +49,11 @@ $('.scroll-down').click(function(event) {
       event.preventDefault();
       $('body').animate({scrollTop:$(document).height()}, 3000);
       console.log('hello');
-      //$('.start-container').animate({opacity: 0.9}, 1300);
+      //$('body').animate({opacity: 0.0}, 3000);
       $('#container-bot').css("display", "initial");
       $('#video').css("display", "initial");
       $('#bottom-tool').css("display", "initial");
-      $('body').css('background-image', 'none');
+      //$('body').css('background-image', 'none');
   });
 
 
