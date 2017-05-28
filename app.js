@@ -10,7 +10,7 @@ function displayYoutubeSearchData(data) {
   var resultElement = '';
   if (data.items) {
     data.items.forEach(function(item) {
-     resultElement += '<a class="link" href="http://www.youtube.com/watch?v='+item.id.videoId+'">\
+     resultElement += '<a target="_blank" class="link" href="http://www.youtube.com/watch?v='+item.id.videoId+'">\
      <img class="thumbnails" src="'+ item.snippet.thumbnails.default.url +'"/></a>';
     });
   }
@@ -53,6 +53,7 @@ $('.scroll-down').click(function(event) {
       $('#container-bot').css("display", "initial");
       $('#video').css("display", "initial");
       $('#bottom-tool').css("display", "initial");
+      $('h2').css("display", "block");
       //$('body').css('background-image', 'none');
   });
 
