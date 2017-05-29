@@ -37,7 +37,7 @@ $(function(){init();});
 // Landing Page Animations
 $(function(){
     $(".start-tagline").typed({
-      strings: ["where can I go hiking?", "where can I buy a tent?", "mountain bike rides?"],
+      strings: ["where can I go hiking?", "where can I see wildlife?", "mountain bike rides?"],
       typeSpeed: 0,
       loop: true,
       backDelay: 3000
