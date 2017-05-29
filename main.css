@@ -20,13 +20,14 @@ h2 {
 	display: none;
 	text-align: center;
 	margin-bottom: 0px;
+	margin-top: 0px;
 }
 
 /*tablet size needs to have start-container & initial instruction container adjusted*/
 
 .image-container {
 	padding-top: 17%;
-	height: 33%;
+	height: 50%;
 	background-image: url("img/grandtetonwallpaper.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -55,7 +56,7 @@ h2 {
 	text-align: center;
 	box-sizing: border-box;
 	width:100%;
-	height: 125%;
+	height: 100%;
 	background: white;
 	display: inherit;
 	font-size: 26px;
@@ -95,6 +96,7 @@ button:hover {
 	position: relative;
 	width: 100%;
 	text-align: center;
+	margin-bottom: 0px;
 	}
 
 	input.cleverscriptsubmit {
@@ -125,7 +127,7 @@ button:hover {
 		width: 85%;
 		height: 300px;
 		/*top: 420px;*/
-		margin-top: 20%;
+		margin-top: 5%;
 		margin-left: 8%;
 		text-align: center;
 		font-size: 18px;
@@ -220,12 +222,15 @@ a {
 		margin-bottom: 0;
 		margin-top: 0;
 	}
+	
+	.imgage-container {
+		height: 40%;
+	}
+
 	.start-container {
 		text-align: center;
 		box-sizing: border-box;
 		width:100%;
-		/*height: 160%;*/
-		height: 700px;
 		background: white;
 		display: inherit;
 		font-size: 26px;
