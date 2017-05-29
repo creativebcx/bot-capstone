@@ -37,7 +37,7 @@ $(function(){init();});
 // Landing Page Animations
 $(function(){
     $(".start-tagline").typed({
-      strings: ["where can I go hiking?", "where can I buy a tent?", "where can I see wildlife?", "mountain bike rides?", "are there local guide services?"],
+      strings: ["where can I go hiking?", "where can I buy a tent?", "mountain bike rides?"],
       typeSpeed: 0,
       loop: true,
       backDelay: 3000
@@ -56,6 +56,5 @@ $('.scroll-down').click(function(event) {
       $('h2').css("display", "block");
       //$('body').css('background-image', 'none');
   });
-
 
 //offset scroll based on pixels
