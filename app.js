@@ -57,4 +57,19 @@ $('.scroll-down').click(function(event) {
       //$('body').css('background-image', 'none');
   });
 
-//offset scroll based on pixels
+// Animation for bot reply so that conversation stays on bot reply screen
+$('input.cleverscriptsubmit').click(function(event) {
+      setTimeout(function(){
+          $('.cleverscriptreply').animate({scrollTop:$(document).height()}, 1000);
+    }, 100);
+});
+
+
+
+
+
+
+
+
+
+

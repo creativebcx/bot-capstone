@@ -66,18 +66,19 @@ h2 {
 	padding-top: 2%;
 	padding-left: 15%;
 	padding-right: 15%;
+	font-size: 18px;
 }
 
 button{
 	margin: auto;
 	display: block;
-	margin-top: 3%;
+	margin-top: 5%;
 	width: 150px;
-	border: 2px solid grey;
+	border: 2px solid white;
 	border-radius: 20px;
 	font-size: 20px;
-	color: grey;
-	background: rgba(255, 255, 255, 0.4);
+	color: white;
+	background: rgba(255, 255, 255, 0.3);
 }
 
 button:hover {
@@ -133,6 +134,11 @@ button:hover {
 		box-sizing: border-box;
 		border: 5px solid grey;
 		border-radius: 20px;
+		/*transform: rotate(180deg);*/
+	}
+
+	.cleverscriptdivider {
+
 	}
 
 
@@ -381,11 +387,11 @@ a {
 		margin-top: 5%;
 		display: block;
 		width: 200px;
-		height: 50px;
-		border: 2px solid grey;
+		height: 40px;
+		border: 2px solid white;
 		border-radius: 20px;
 		font-size: 20px;
-		color: grey;
+		color: white;
 		background: rgba(255, 255, 255, 0.4);
 	}
 
