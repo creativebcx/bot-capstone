@@ -10,7 +10,8 @@ body {
 
 h1 {
 	text-align: center;
-	color: #4f83cc;
+	/*color: #4f83cc;*/
+	color: grey;
 	margin: 0;
 	
 }
@@ -20,7 +21,7 @@ h2 {
 	text-align: center;
 	margin-bottom: 0px;
 	margin-top: 0px;
-	color: #4f83cc;
+	color: grey;
 }
 
 /*tablet size needs to have start-container & initial instruction container adjusted*/
@@ -28,26 +29,23 @@ h2 {
 .header {
 	padding: 0.5%;
 	width: 100%;
-	height: 5%;
-	-moz-box-shadow:    3px 3px 5px 6px #ccc;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow:         3px 3px 5px 6px #ccc;
+	height: 40px;
+	position: fixed;
+	background-color: white;
 }
 
 .image-container {
-	padding-top: 17%;
-	height: 35%;
+	padding-top: 25%;
+	height: 50%;
 	background-image: url("img/grandtetonwallpaper.jpg");
-	background-size: cover;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
-	-moz-box-shadow:    3px 3px 5px 6px #ccc;
+	/*background-attachment: fixed
+	/*-moz-box-shadow:    3px 3px 5px 6px #ccc;
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow:         3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;*/
 }
 
 #container {
-	height: 100%;
 	width: 100%;
 }
 
@@ -68,7 +66,6 @@ h2 {
 	text-align: center;
 	box-sizing: border-box;
 	width:100%;
-	height: 100%;
 	background: white;
 	display: inherit;
 	font-size: 26px;
@@ -81,7 +78,7 @@ h2 {
 	padding-left: 15%;
 	padding-right: 15%;
 	font-size: 18px;
-	color: #4f83cc;
+	color: grey;
 }
 .getAnswersIcon {
 	margin-left: 5px;
@@ -92,21 +89,20 @@ button{
 	display: block;
 	margin-top: 2%;
 	width: 180px;
-	border: 2px solid #4f83cc;
+	border: 2px solid grey;
 	border-radius: 20px;
 	font-size: 20px;
 	color: white;
-	background: #4f83cc;
+	background: grey;
 }
 
 button:hover {
-	background-color: #81d4fa;
-	border-color: #81d4fa;
+	background-color: lightgrey;
+	border-color: lightgrey;
 }
 
 #container-bot {
-	/*top: 130%;*/
-	color: #002f6c;
+	color: grey;
 	display: none;
 }
 
@@ -115,56 +111,50 @@ button:hover {
 	width: 100%;
 	text-align: center;
 	margin-bottom: 0px;
-	color: #4f83cc;
+	color: grey;
 	}
 
 	input.cleverscriptsubmit {
 		margin-top: 10px;
 		width: 75px;
-		border: 2px solid #4f83cc;
+		border: 2px solid grey;
 		border-radius: 20px;
 		font-size: 20px;
 		color: white;
-		background: #4f83cc;
+		background: grey;
 	}
 
 	input:hover {
-		background: #81d4fa;
-		border-color: #81d4fa;
+		background: lightgrey;
+		border-color: lightgrey;
 	}
 
 	.cleverscriptinput {
 		position: relative;
 		height: 30px;
-		margin-top: 20px;
+		margin-top: 10%;
+		margin-bottom: 5%;
 		font-size: 16px;
-		border: 2px solid #4f83cc;
+		border: 2px solid grey;
 		border-radius: 20px;
 	}	
 
 	.cleverscriptreply {
 		padding: 5%;
 		width: 85%;
-		height: 300px;
-		/*top: 420px;*/
+		height: 50%;
 		margin-top: 5%;
 		margin-left: 8%;
 		text-align: center;
 		font-size: 18px;
 		overflow: auto;
 		box-sizing: border-box;
-		border: 5px solid #4f83cc;
+		border: 5px solid grey;
 		border-radius: 20px;
-		/*transform: rotate(180deg);*/
 		-moz-box-shadow:    3px 3px 5px 6px #ccc;
         -webkit-box-shadow: 3px 3px 5px 6px #ccc;
         box-shadow:         3px 3px 5px 6px #ccc
 	}
-
-	.cleverscriptdivider {
-
-	}
-
 
 #video {
 	width: 100%;
@@ -195,18 +185,21 @@ button:hover {
 	}
 
 #bottom-tool {
-	text-align: center;
-	/*top: 120px;*/
+	width: 100%;
 	display: none;
-	margin-top: 10px;
+	text-align: right;
+}
+
+#bottom-tool a {
+	width: 100%;
 }
 
 a {
-	color: #4f83cc;
+	color: white;
 }
 
 #bottom-tool a:hover {
-	color: red;
+	color: lightgrey;
 }
 
 /*typed.js css info*/
