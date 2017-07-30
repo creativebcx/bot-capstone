@@ -2,6 +2,9 @@ html, body {
 	height: 100%;
 }
 
+.hidden {
+	display: none;
+}
 
 body {
 	margin: 0px;
@@ -24,8 +27,6 @@ h2 {
 	color: grey;
 }
 
-/*tablet size needs to have start-container & initial instruction container adjusted*/
-
 .header {
 	padding: 0.5%;
 	width: 100%;
@@ -34,19 +35,17 @@ h2 {
 	background-color: white;
 }
 
+/* This is the background image container */
+
 .image-container {
 	padding-top: 25%;
 	height: 50%;
 	background-image: url("img/grandtetonwallpaper.jpg");
+	-webkit-background-size: cover
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-repeat: no-repeat;
-	/*background-attachment: fixed
-	/*-moz-box-shadow:    3px 3px 5px 6px #ccc;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow:         3px 3px 5px 6px #ccc;*/
-}
-
-#container {
-	width: 100%;
+	background-size: cover;
 }
 
 .tagline-container {
@@ -62,24 +61,15 @@ h2 {
 		font-size: 20px;
 	}
 
-.start-container {
-	text-align: center;
-	box-sizing: border-box;
-	width:100%;
-	background: white;
-	display: inherit;
-	font-size: 26px;
-	color: grey;	
-}
-
 .initial-instructions-container {
 	text-align: center;
 	padding-top: 2%;
 	padding-left: 15%;
 	padding-right: 15%;
 	font-size: 18px;
-	color: grey;
+	color: white;
 }
+
 .getAnswersIcon {
 	margin-left: 5px;
 }
@@ -103,7 +93,6 @@ button:hover {
 
 #container-bot {
 	color: grey;
-	display: none;
 }
 
 .cleverscriptform {
@@ -111,7 +100,7 @@ button:hover {
 	width: 100%;
 	text-align: center;
 	margin-bottom: 0px;
-	color: grey;
+	color: white;
 	}
 
 	input.cleverscriptsubmit {
@@ -132,7 +121,6 @@ button:hover {
 	.cleverscriptinput {
 		position: relative;
 		height: 30px;
-		margin-top: 10%;
 		margin-bottom: 5%;
 		font-size: 16px;
 		border: 2px solid grey;
@@ -140,69 +128,31 @@ button:hover {
 	}	
 
 	.cleverscriptreply {
+		background-color: white;
 		padding: 5%;
 		width: 85%;
-		height: 50%;
-		margin-top: 5%;
+		height: 70%;
 		margin-left: 8%;
 		text-align: center;
 		font-size: 18px;
 		overflow: auto;
 		box-sizing: border-box;
-		border: 5px solid grey;
 		border-radius: 20px;
-		-moz-box-shadow:    3px 3px 5px 6px #ccc;
-        -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-        box-shadow:         3px 3px 5px 6px #ccc
+		-moz-box-shadow:    1px 1px 1px 1px #ccc;
+    -webkit-box-shadow: 1px 1px 1px 1px #ccc;
+    box-shadow:         1px 1px 1px 1px #ccc;
 	}
 
-#video {
-	width: 100%;
-	display: inline-block;
+footer {
 	text-align: center;
-	position: relative;
-	display: none;
+	font-family: 'Sacramento', cursive;
 }
 
-	.thumbnails {
-		display: inline-block;
-		margin-top: 1%;
-		height: 100px;
-		width: auto;
-		margin-bottom: 20px;
-		border: 2px solid grey;
-		border-radius: 20px;
-		opacity: 0.7;
-	}
-
-	img:hover.thumbnails {
-		opacity: 0.9;
-	}
-
-	.link {
-		color: transparent;
-		height: 0px;
-	}
-
-#bottom-tool {
-	display: none;
-	font-size: 16px;
-}
-
-.bottom-tool-right {
-	display: inline-block;
-	text-align: right;
-	width: 100%;
-	background-color: grey;
-	height: 30px;
-}
-
-#contact-id {
-	text-align: left;
-}
-
-a {
-	color: white;
+#bottom-tool a {
+	position: absolute;
+	bottom: 0px;
+	font-size: 20px;
+	color: grey;
 }
 
 #bottom-tool a:hover {
@@ -234,9 +184,29 @@ a {
 }
 
 .typed-fade-out{
-    opacity: 0;
-    animation: 0;
-    transition: opacity .25s;
+  opacity: 0;
+  animation: 0;
+  transition: opacity .25s;
+}
+
+#about-container {
+	background-color: white;
+	margin: auto;
+	padding: 5%;
+	width: 85%;
+	height: 50%;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 20px;
+	-moz-box-shadow:    1px 1px 1px 1px #ccc;
+  -webkit-box-shadow: 1px 1px 1px 1px #ccc;
+  box-shadow:         1px 1px 1px 1px #ccc;
+}
+
+#logoStyle {
+	width: 100px;
+	margin-top: 2%;
+	margin-left: 2%;
 }
 
 /*tablet size*/
@@ -252,97 +222,6 @@ a {
 		margin-top: 0;
 	}
 	
-	.imgage-container {
-		height: 40%;
-	}
-
-	.start-container {
-		text-align: center;
-		box-sizing: border-box;
-		width:100%;
-		background: white;
-		display: inherit;
-		font-size: 26px;
-		color: grey;	
-	}
-
-	#container-bot {
-		padding: 30px;
-		top: 150%;
-		color: grey;
-		display: none;
-}
-
-	.cleverscriptform {
-		margin-bottom: 0;
-	}
-
-	.cleverscriptinput {
-		position: relative;
-		height: 30px;
-		margin-top: 20px;
-		font-size: 16px;
-		border: 2px solid grey;
-		border-radius: 20px;
-	}	
-
-	.cleverscriptreply {
-		padding: 5%;
-		width: 85%;
-		height: 250px;
-		top: 600px;
-		margin-top: 5%;
-		margin-left: 8%;
-		text-align: center;
-		font-size: 18px;
-		overflow: auto;
-		box-sizing: border-box;
-		border: 5px solid grey;
-		border-radius: 20px;
-	}
-
-	#video {
-	width: 100%;
-	display: inline-block;
-	text-align: center;
-	position: relative;
-	display: none;
-}
-
-	.thumbnails {
-		display: inline-block;
-		height: 60px;
-		width: auto;
-		margin-bottom: 10px;
-		margin-top: 10px;
-		margin-left: 6%;
-		border: 2px solid grey;
-		border-radius: 20px;
-		opacity: 0.7;
-	}
-
-	img:hover.thumbnails {
-		opacity: 0.9;
-	}
-
-	.link {
-		color: transparent;
-	}
-
-#bottom-tool {
-	text-align: center;
-	display: none;
-}
-
-a {
-	color: white;
-}
-
-#bottom-tool a:hover {
-	color: red;
-}
-
-}
 
 /*phone size*/
 @media (max-width: 600px) {
@@ -355,96 +234,6 @@ a {
 		font-size: 16px;
 		text-align: center;
 	}
-	.start-tagline {
-		margin-top: 50px;
-		color: white;
-		text-align: center;
-		font-size: 16px;
-	}
-
-	.start-container {
-		text-align: center;
-		box-sizing: border-box;
-		width:100%;
-		/*height: 90%;*/
-		background: white;
-		display: inherit;
-		font-size: 16px;
-		color: grey;	
-		height: 700px;
-	}
-
-	input.cleverscriptsubmit {
-		margin-top: 15px;
-		width: 200px;
-		border: 2px solid grey;
-		border-radius: 20px;
-		font-size: 20px;
-		color: grey;
-		height: 50px;
-		background: rgba(255, 255, 255, 0.4);
-	}
-
-	input:hover {
-		background: darkgrey;
-	}
-
-	.cleverscriptinput {
-		position: relative;
-		height: 50px;
-		margin-top: 20px;
-		font-size: 16px;
-		border: 2px solid grey;
-		border-radius: 20px;
-	}	
-
-	.initial-instructions-container {
-		text-align: center;
-		padding-top: 10%;
-		padding-left: 15%;
-		padding-right: 15%;
-	}
-
-	button{
-		margin: auto;
-		margin-top: 3%;
-		display: block;
-		width: 200px;
-		height: 40px;
-		border: 2px solid grey;
-		border-radius: 20px;
-		font-size: 20px;
-		color: grey;
-		background: rgba(255, 255, 255, 0.4);
-	}
-
-	.cleverscriptreply {
-		padding: 3%;
-		width: 85%;
-		height: 150px;
-		top: 400px;
-		margin-top: 5%;
-		margin-left: 8%;
-		text-align: center;
-		font-size: 14px;
-		overflow: auto;
-		box-sizing: border-box;
-		border: 5px solid grey;
-		border-radius: 20px;
-	}
-
-	.thumbnails {
-		display: inline-block;
-		height: 60px;
-		width: auto;
-		margin-bottom: 10px;
-		margin-top: 10px;
-		margin-left: 3%;
-		border: 2px solid grey;
-		border-radius: 20px;
-		opacity: 0.7;
-	}
-}
 
 
 

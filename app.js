@@ -46,7 +46,10 @@ $(function(){
 
 // Start Bot Animations
 $('.scroll-down').click(function(event) {
-      event.preventDefault();
+  event.preventDefault();
+  $('#container-bot').removeClass('hidden');
+  $('.tagline-container').addClass('hidden');
+/*
       $('body').animate({scrollTop:$(document).height()}, 3000);
       console.log('hello');
       //$('body').animate({opacity: 0.0}, 3000);
@@ -54,7 +57,7 @@ $('.scroll-down').click(function(event) {
       $('#video').css("display", "initial");
       $('#bottom-tool').css("display", "initial");
       $('h2').css("display", "block");
-      //$('body').css('background-image', 'none');
+      //$('body').css('background-image', 'none');*/
   });
 
 // Animation for bot reply so that conversation stays on bot reply screen
