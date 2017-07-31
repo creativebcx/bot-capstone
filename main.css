@@ -52,14 +52,14 @@ h2 {
 	text-align: center;
 	margin: 1px;
 	height: 20px;
-	}
+}
 
-	.start-tagline {
-		margin-top: 2%;
-		color: white;
-		text-align: center;
-		font-size: 20px;
-	}
+.start-tagline {
+	margin-top: 2%;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+}
 
 .initial-instructions-container {
 	text-align: center;
@@ -103,45 +103,45 @@ button:hover {
 	color: white;
 	}
 
-	input.cleverscriptsubmit {
-		margin-top: 10px;
-		width: 75px;
-		border: 2px solid grey;
-		border-radius: 20px;
-		font-size: 20px;
-		color: white;
-		background: grey;
-	}
+input.cleverscriptsubmit {
+	margin-top: 10px;
+	width: 75px;
+	border: 2px solid grey;
+	border-radius: 20px;
+	font-size: 20px;
+	color: white;
+	background: grey;
+}
 
-	input:hover {
-		background: lightgrey;
-		border-color: lightgrey;
-	}
+input:hover {
+	background: lightgrey;
+	border-color: lightgrey;
+}
 
-	.cleverscriptinput {
-		position: relative;
-		height: 30px;
-		margin-bottom: 5%;
-		font-size: 16px;
-		border: 2px solid grey;
-		border-radius: 20px;
-	}	
+.cleverscriptinput {
+	position: relative;
+	height: 30px;
+	margin-bottom: 5%;
+	font-size: 16px;
+	border: 2px solid grey;
+	border-radius: 20px;
+}	
 
-	.cleverscriptreply {
-		background-color: white;
-		padding: 5%;
-		width: 85%;
-		height: 70%;
-		margin-left: 8%;
-		text-align: center;
-		font-size: 18px;
-		overflow: auto;
-		box-sizing: border-box;
-		border-radius: 20px;
-		-moz-box-shadow:    1px 1px 1px 1px #ccc;
-    -webkit-box-shadow: 1px 1px 1px 1px #ccc;
-    box-shadow:         1px 1px 1px 1px #ccc;
-	}
+.cleverscriptreply {
+	background-color: white;
+	padding: 5%;
+	width: 85%;
+	height: 70%;
+	margin-left: 8%;
+	text-align: center;
+	font-size: 18px;
+	overflow: auto;
+	box-sizing: border-box;
+	border-radius: 20px;
+	-moz-box-shadow: 1px 1px 1px 1px #ccc;
+  -webkit-box-shadow: 1px 1px 1px 1px #ccc;
+  box-shadow: 1px 1px 1px 1px #ccc;
+}
 
 footer {
 	text-align: center;
@@ -168,16 +168,19 @@ footer {
 	animation: blink 0.7s infinite;
 	color: white;
 }
+
 @keyframes blink{
 	0% { opacity:1; }
 	50% { opacity:0; }
 	100% { opacity:1; }
 }
+
 @-webkit-keyframes blink{
 	0% { opacity:1; }
 	50% { opacity:0; }
 	100% { opacity:1; }
 }
+
 @-moz-keyframes blink{
 	0% { opacity:1; }
 	50% { opacity:0; }
