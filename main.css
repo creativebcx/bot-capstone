@@ -223,32 +223,33 @@ footer {
 		margin-top: 0;
 	}
 	
-.image-container {
-	height: 100%;
-}
+	.image-container {
+		height: 100%;
+	}
 
-.cleverscriptreply {
+	.cleverscriptreply {
 		height: 50%;
 		font-size: 18px;
 	}
 
-.cleverscriptinput {
+	.cleverscriptinput {
 		width: 75%;
 		margin-top: 25px;
 	}	
 
-input.cleverscriptsubmit {
+	input.cleverscriptsubmit {
 		margin: 25px;
 		width: 150px;
 		border: 2px solid white;
 	}
 
-#bottom-tool a {	
-	color: white;
-}
+	#bottom-tool a {	
+		color: white;
+	}
 
-#logoStyle {
-	margin-top: 5%;
+	#logoStyle {
+		margin-top: 5%;
+	}	
 }
 
 /*phone size*/
@@ -263,11 +264,11 @@ input.cleverscriptsubmit {
 		text-align: center;
 	}
 
-.image-container {
-	height: 100%;
-}
+	.image-container {
+		height: 100%;
+	}
 
-.cleverscriptreply {
+	.cleverscriptreply {
 		width: 85%;
 		height: 60%;
 		font-size: 18px;
@@ -279,26 +280,20 @@ input.cleverscriptsubmit {
 	}
 
 	.cleverscriptinput {
-		position: relative;
 		width: 85%;
 		margin-top: 25px;
-		height: 30px;
-		font-size: 16px;
-		border: 2px solid grey;
-		border-radius: 20px;
 	}	
 
-#bottom-tool a {	
-	color: white;
+	#bottom-tool a {	
+		color: white;
+	}
+
+	#logoStyle {
+		width: 60px;
+		margin-top: 2%;
+		margin-left: 2%;
+	}
 }
-
-#logoStyle {
-	width: 60px;
-	margin-top: 2%;
-	margin-left: 2%;
-}
-
-
 
 
 
