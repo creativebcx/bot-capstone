@@ -146,6 +146,7 @@ button:hover {
 footer {
 	text-align: center;
 	font-family: 'Sacramento', cursive;
+	margin-right: 5%;
 }
 
 #bottom-tool a {
@@ -222,6 +223,33 @@ footer {
 		margin-top: 0;
 	}
 	
+.image-container {
+	height: 100%;
+}
+
+.cleverscriptreply {
+		height: 50%;
+		font-size: 18px;
+	}
+
+.cleverscriptinput {
+		width: 75%;
+		margin-top: 25px;
+	}	
+
+input.cleverscriptsubmit {
+		margin: 25px;
+		width: 150px;
+		border: 2px solid white;
+	}
+
+#bottom-tool a {	
+	color: white;
+}
+
+#logoStyle {
+	margin-top: 5%;
+}
 
 /*phone size*/
 @media (max-width: 600px) {
@@ -235,12 +263,40 @@ footer {
 		text-align: center;
 	}
 
+.image-container {
+	height: 100%;
+}
 
+.cleverscriptreply {
+		width: 85%;
+		height: 60%;
+		font-size: 18px;
+	}
 
+	input.cleverscriptsubmit {
+		width: 150px;
+		border: 2px solid white;
+	}
 
+	.cleverscriptinput {
+		position: relative;
+		width: 85%;
+		margin-top: 25px;
+		height: 30px;
+		font-size: 16px;
+		border: 2px solid grey;
+		border-radius: 20px;
+	}	
 
+#bottom-tool a {	
+	color: white;
+}
 
-
+#logoStyle {
+	width: 60px;
+	margin-top: 2%;
+	margin-left: 2%;
+}
 
 
 
